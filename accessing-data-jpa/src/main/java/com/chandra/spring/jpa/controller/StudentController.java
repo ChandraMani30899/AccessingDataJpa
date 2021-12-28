@@ -68,6 +68,11 @@ public class StudentController {
 		       studentRepository.save(student);
 		  
 		  return "redirect:/student/showAll";
+	  } 
+	  
+	  @GetMapping("/check")
+	  public String check() {
+		  return "Hello world";
 	  }
 	  
 }
